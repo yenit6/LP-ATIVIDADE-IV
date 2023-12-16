@@ -15,8 +15,9 @@ float mediasalario(struct Funcionario funcionarios[], int n, const char *buscar)
 {
     float soma = 0;
     int contador = 0;
+    int i;
 
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         if (strcmp(funcionarios[i].cargo, buscar) == 0)
         {
@@ -40,8 +41,9 @@ int main()
     struct Funcionario funcionarios[m];
     float media;
     char *buscar = "programador";
-
-    for (int i = 0; i < m; i++)
+    int i;
+    
+    for ( i = 0; i < m; i++)
     {
         printf("\nfuncionario %d:\n", i + 1);
         printf("nome: ");
